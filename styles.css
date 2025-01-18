@@ -1,0 +1,200 @@
+:root {
+    --netflix-red: #E50914;
+    --netflix-black: #141414;
+    --netflix-dark-gray: #222222;
+    --netflix-light-gray: #757575;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: var(--netflix-black);
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    padding: 1rem 5%;
+    background-color: transparent;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 40px;
+}
+
+main {
+    padding-top: 60px;
+}
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://assets.nflxext.com/ffe/siteui/vlv3/f841d4c7-10e1-40af-bcae-07a3f8dc141a/f6d7434e-d6de-4185-a6d4-c77a2d08737b/US-en-20220502-popsignuptwoweeks-perspective_alpha_website_medium.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.subheadline {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    max-width: 800px;
+}
+
+.cta-button {
+    background-color: var(--netflix-red);
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #f40612;
+}
+
+section {
+    padding: 4rem 5%;
+}
+
+.benefits {
+    background-color: var(--netflix-dark-gray);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.benefit-item {
+    text-align: center;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.benefit-item i {
+    font-size: 2.5rem;
+    color: var(--netflix-red);
+    margin-bottom: 1rem;
+}
+
+.special-offer {
+    background: linear-gradient(rgba(229, 9, 20, 0.9), rgba(229, 9, 20, 0.9));
+    text-align: center;
+}
+
+.offer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.limited-time {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+.trust {
+    background-color: var(--netflix-dark-gray);
+}
+
+.trust-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.trust-item {
+    text-align: center;
+}
+
+.trust-item i {
+    font-size: 2rem;
+    color: var(--netflix-red);
+    margin-bottom: 1rem;
+}
+
+.testimonials {
+    background-color: var(--netflix-black);
+    text-align: center;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: var(--netflix-dark-gray);
+    border-radius: 10px;
+}
+
+footer {
+    background-color: var(--netflix-dark-gray);
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+.social-links {
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.footer-links a {
+    color: var(--netflix-light-gray);
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .subheadline {
+        font-size: 1.2rem;
+    }
+    
+    section {
+        padding: 2rem 5%;
+    }
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
